@@ -1,0 +1,5 @@
+module agua (logic output s);
+
+	assign s = 1;
+
+endmodule;

@@ -1,4 +1,4 @@
-module agua (output logic s);
+module agua (input logic i, output logic s);
 
-	assign s = 1;
-endmodule;
+	assign s = i;
+endmodule 

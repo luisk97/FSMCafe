@@ -4,21 +4,26 @@ module FSMCafe (input logic clk, input logic reset,
 	
 	int saldo;
 	logic currentState;
-	Expreso expreso(clk, reset, s, saldo);
+	logic [3:0] flag;
+	logic [3:0] aux;
+	Expreso expreso(clk, reset, saldo, s);
 
 			
-	always_ff @(posedge clk or posedge reset)
-		
-		if (reset) s = 4'b0000; assign saldo = 0;
-		
-		else
-		if(x == 3'b001) saldo = saldo + 100; assign s = saldo / 100;
-		
-		if(x == 3'b010) //500
-			saldo = saldo + 500;
-			assign s = saldo / 100;
-		if(x == 3'b011 && saldo >= 300) //expresso
-			currentState = expreso; 
-				
-			
+	always_ff @(posedge clk or posedge reset) begin
+		if (reset) begin
+			aux = 4'b0000;
+			saldo = 1'b0;
+			end
+		else if(x == 3'b001) begin
+				saldo = saldo + 100;
+				aux = saldo/100;
+				end
+		else if(x == 3'b010) //500
+				saldo = saldo + 500;
+		else if(x == 3'b011 && saldo >= 300) //expresso
+				flag[0] = 1'b1;
+	end
+	
+	assign s = aux;
+
 endmodule 

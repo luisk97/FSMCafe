@@ -14,11 +14,11 @@ module FMStb();
 	initial begin
 	reset = 0;
 	
-	x = 3'b001;
-	x = 3'b001;
-	x = 3'b001;
+	x = 3'b001; #20;
+	x = 3'b001; #20;
+	x = 3'b001; #20;
 	
-	x = 3'b011;
+	x = 3'b011; #20;
 	
 	end
 endmodule

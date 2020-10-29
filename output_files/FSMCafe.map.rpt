@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FSMCafe
-Tue Oct 27 16:41:22 2020
+Thu Oct 29 11:32:07 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Tue Oct 27 16:41:22 2020           ;
+; Analysis & Synthesis Status ; Failed - Thu Oct 29 11:32:07 2020           ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; FSMCafe                                     ;
 ; Top-level Entity Name       ; FSMCafe                                     ;
@@ -161,30 +161,34 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Oct 27 16:41:12 2020
+    Info: Processing started: Thu Oct 29 11:31:33 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FSMCafe -c FSMCafe
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file cafe.sv
-    Info (12023): Found entity 1: cafe File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/cafe.sv Line: 1
-Error (10170): Verilog HDL syntax error at FSMCafe.sv(14) near text: "else";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/FSMCafe.sv Line: 14
-Error (10170): Verilog HDL syntax error at FSMCafe.sv(17) near text: "if";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/FSMCafe.sv Line: 17
-Error (10170): Verilog HDL syntax error at FSMCafe.sv(20) near text: "if";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/FSMCafe.sv Line: 20
-Error (10112): Ignored design unit "FSMCafe" at FSMCafe.sv(1) due to previous errors File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/FSMCafe.sv Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file fsmcafe.sv
-Error (10170): Verilog HDL syntax error at Expreso.sv(3) near text: "int";  expecting a direction. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/Expreso.sv Line: 3
-Error (10170): Verilog HDL syntax error at Expreso.sv(10) near text: "#";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/Expreso.sv Line: 10
-Error (10170): Verilog HDL syntax error at Expreso.sv(11) near text: "#";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/Expreso.sv Line: 11
-Error (10170): Verilog HDL syntax error at Expreso.sv(18) near text: "endmodule";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/Expreso.sv Line: 18
-Info (12021): Found 0 design units, including 0 entities, in source file expreso.sv
-Error (10170): Verilog HDL syntax error at agua.sv(4) near text: ";";  expecting a description. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/agua.sv Line: 4
-Info (12021): Found 0 design units, including 0 entities, in source file agua.sv
+    Info (12023): Found entity 1: cafe File: C:/QuartusProjects/Lab4/cafe.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fsmcafe.sv
+    Info (12023): Found entity 1: FSMCafe File: C:/QuartusProjects/Lab4/FSMCafe.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file expreso.sv
+    Info (12023): Found entity 1: Expreso File: C:/QuartusProjects/Lab4/Expreso.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file agua.sv
+    Info (12023): Found entity 1: agua File: C:/QuartusProjects/Lab4/agua.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fmstb.sv
-    Info (12023): Found entity 1: FMStb File: C:/Users/danie/OneDrive/Documentos/TEC/Taller Digitales/FSMCafe/FMStb.sv Line: 1
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 9 errors, 1 warning
-    Error: Peak virtual memory: 4774 megabytes
-    Error: Processing ended: Tue Oct 27 16:41:22 2020
-    Error: Elapsed time: 00:00:10
-    Error: Total CPU time (on all processors): 00:00:20
+    Info (12023): Found entity 1: FMStb File: C:/QuartusProjects/Lab4/FMStb.sv Line: 1
+Info (12127): Elaborating entity "FSMCafe" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at FSMCafe.sv(7): object "flag" assigned a value but never read File: C:/QuartusProjects/Lab4/FSMCafe.sv Line: 7
+Warning (10230): Verilog HDL assignment warning at FSMCafe.sv(19): truncated value with size 32 to match size of target (4) File: C:/QuartusProjects/Lab4/FSMCafe.sv Line: 19
+Warning (10240): Verilog HDL Always Construct warning at FSMCafe.sv(12): inferring latch(es) for variable "saldo", which holds its previous value in one or more paths through the always construct File: C:/QuartusProjects/Lab4/FSMCafe.sv Line: 12
+Info (10041): Inferred latch for "saldo[0]" at FSMCafe.sv(17) File: C:/QuartusProjects/Lab4/FSMCafe.sv Line: 17
+Info (10041): Inferred latch for "saldo[1]" at FSMCafe.sv(17) File: C:/QuartusProjects/Lab4/FSMCafe.sv Line: 17
+Info (12128): Elaborating entity "Expreso" for hierarchy "Expreso:expreso" File: C:/QuartusProjects/Lab4/FSMCafe.sv Line: 9
+Warning (10036): Verilog HDL or VHDL warning at Expreso.sv(5): object "vuelto" assigned a value but never read File: C:/QuartusProjects/Lab4/Expreso.sv Line: 5
+Error (10748): Verilog HDL error at Expreso.sv(5): expression in variable declaration assignment to vuelto must be constant File: C:/QuartusProjects/Lab4/Expreso.sv Line: 5
+Error (12152): Can't elaborate user hierarchy "Expreso:expreso" File: C:/QuartusProjects/Lab4/FSMCafe.sv Line: 9
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 5 warnings
+    Error: Peak virtual memory: 4777 megabytes
+    Error: Processing ended: Thu Oct 29 11:32:07 2020
+    Error: Elapsed time: 00:00:34
+    Error: Total CPU time (on all processors): 00:00:44
 
 

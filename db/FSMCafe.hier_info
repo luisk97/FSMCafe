@@ -1,0 +1,62 @@
+|FSMCafe
+clk => clk.IN1
+reset => reset.IN1
+x[0] => Equal0.IN0
+x[0] => Equal1.IN2
+x[1] => Equal0.IN2
+x[1] => Equal1.IN0
+x[2] => Equal0.IN1
+x[2] => Equal1.IN1
+s[0] <= Expreso:expreso.port3
+s[1] <= Expreso:expreso.port3
+s[2] <= Expreso:expreso.port3
+s[3] <= Expreso:expreso.port3
+
+
+|FSMCafe|Expreso:expreso
+clk => flag[0].CLK
+clk => salida[0].CLK
+reset => ~NO_FANOUT~
+saldo[0] => ~NO_FANOUT~
+saldo[1] => ~NO_FANOUT~
+saldo[2] => ~NO_FANOUT~
+saldo[3] => ~NO_FANOUT~
+saldo[4] => ~NO_FANOUT~
+saldo[5] => ~NO_FANOUT~
+saldo[6] => ~NO_FANOUT~
+saldo[7] => ~NO_FANOUT~
+saldo[8] => ~NO_FANOUT~
+saldo[9] => ~NO_FANOUT~
+saldo[10] => ~NO_FANOUT~
+saldo[11] => ~NO_FANOUT~
+saldo[12] => ~NO_FANOUT~
+saldo[13] => ~NO_FANOUT~
+saldo[14] => ~NO_FANOUT~
+saldo[15] => ~NO_FANOUT~
+saldo[16] => ~NO_FANOUT~
+saldo[17] => ~NO_FANOUT~
+saldo[18] => ~NO_FANOUT~
+saldo[19] => ~NO_FANOUT~
+saldo[20] => ~NO_FANOUT~
+saldo[21] => ~NO_FANOUT~
+saldo[22] => ~NO_FANOUT~
+saldo[23] => ~NO_FANOUT~
+saldo[24] => ~NO_FANOUT~
+saldo[25] => ~NO_FANOUT~
+saldo[26] => ~NO_FANOUT~
+saldo[27] => ~NO_FANOUT~
+saldo[28] => ~NO_FANOUT~
+saldo[29] => ~NO_FANOUT~
+saldo[30] => ~NO_FANOUT~
+saldo[31] => ~NO_FANOUT~
+s[0] <= salida[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= <GND>
+s[2] <= <GND>
+s[3] <= <GND>
+
+
+|FSMCafe|Expreso:expreso|agua:a
+i => s.DATAIN
+s <= i.DB_MAX_OUTPUT_PORT_TYPE
+
+
